@@ -22,3 +22,15 @@ up: ## spin up environment
 .PHONY: bash
 bash: ## gets inside a workspace container
 		$(DOCKER_COMPOSE) exec --user workspace workspace bash -l
+
+.PHONY: keygen
+keygen: ## laravel app key generate
+		$(DOCKER_COMPOSE) exec --user workspace workspace php artisan key:generate
+
+.PHONY: composer
+composer: ## composer install
+		$(DOCKER_COMPOSE) exec --user workspace workspace composer install
+
+.PHONY: testing
+testing: ## application testing
+		$(DOCKER_COMPOSE) exec --user workspace workspace vendor/bin/phpunit
