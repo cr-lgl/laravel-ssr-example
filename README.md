@@ -14,4 +14,7 @@ make composer
 make keygen
 
 make testing
+
+make bash
+php artisan serve --host 0.0.0.0
 ```
