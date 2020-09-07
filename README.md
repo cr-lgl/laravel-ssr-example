@@ -1,5 +1,5 @@
 # laravel-ssr-example
-Laravel SSR with vue-meta
+Laravel SSR with Vuejs(vue-meta)
 
 ## Run
 
