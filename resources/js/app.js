@@ -1,6 +1,7 @@
-import Vue from 'vue';
 import VueMeta from 'vue-meta';
-import ExampleComponent from './components/ExampleComponent';
+import App from './components/App.vue';
+import Vue from 'vue';
+import router from './router'
 
 Vue.use(VueMeta, {
     tagIDKeyName: 'hid',
@@ -8,7 +9,8 @@ Vue.use(VueMeta, {
 });
 
 const app = new Vue({
-    render: h => h(ExampleComponent),
+    router,
+    render: h => h(App),
 });
 
 const { set } = app.$meta().addApp('custom');

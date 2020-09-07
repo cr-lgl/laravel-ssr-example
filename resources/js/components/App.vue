@@ -4,10 +4,16 @@
            <div class="row justify-content-center">
                <div class="col-md-8">
                    <div class="card">
-                       <div class="card-header">Example Component</div>
+                       <div class="card-header">Example</div>
 
                        <div class="card-body">
-                           I'm an example component.
+                           <router-view></router-view>
+                       </div>
+
+                       <div class="card-footer">
+                           <router-link :to="{ name: 'home' }">Home</router-link>
+                           <router-link :to="{ name: 'about' }">About</router-link>
+                           <router-link :to="{ name: 'contact' }">Contact</router-link>
                        </div>
                    </div>
                </div>

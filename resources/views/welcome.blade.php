@@ -1,5 +1,8 @@
 @php
-    $ssr = ssr('js/server.js')->enabled()->fallback('<div id="app"></div>')->render();
+    $ssr = ssr('js/server.js')->enabled()
+        ->context(['url' => request()->path()])
+        ->fallback('<div id="app"></div>')
+        ->render();
 @endphp
 
 <!DOCTYPE html>
