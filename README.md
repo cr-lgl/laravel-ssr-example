@@ -1,4 +1,5 @@
-# laravel-v8-vue-meta-example
+# laravel-ssr-example
+Laravel SSR with vue-meta
 
 ## Run
 
