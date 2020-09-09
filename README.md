@@ -5,6 +5,7 @@ Laravel SSR with Vuejs(vue-meta)
 
 ```bash
 cp .env.exmaple .env
+cp docker/.env.exmaple docker/.env
 
 nvm use
 npm ci
